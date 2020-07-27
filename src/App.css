@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
+*{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  box-sizing: border-box;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.main-container{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+  background-color: rgba(226, 222, 222, 0.719);
+
+}
+
+.left-div{
+
+  flex: 30%;
+  background-color: #fff;
+  margin:10px;
+  -webkit-box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+  -moz-box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+  box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+  /*display: flex;
+  flex-direction: column;*/
+
+}
+
+.display-image{
+
+  
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.name{
+
+  display: flex;
+  justify-content: center;
+
+}
+.personal-details{
+
+  padding: 10px;
+
+}
+.details{
+
+  display: flex;
+  margin: 10px;
+  max-width: 100%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.details i{
+
+  color: rgba(12, 59, 212, 0.753);
+
+}
+
+.details span{
+  padding: 0 30px;
+  color: rgb(78, 76, 76);
+}
+
+.skills{
+
+  padding: 10px;
+
+}
+
+.skills .details span{
+
+  font-weight: bold;
+
+}
+
+.tech{
+
+  margin: 10px;
+
+}
+.container {
+  max-width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin: 10px;
+  
+  
+}
+
+.skill {
+  text-align: right; /* Right-align text */
+  
+  color: white; /* White text color */
+}
+
+.avg {
+  width: 90%;
+  background-color: rgba(12, 59, 212, 0.753);
+
+}
+
+.expert{
+
+  width: 95%;
+  background-color: rgba(12, 59, 212, 0.753);
+
+}
+
+.right-div{
+
+  flex: 70%;
+  background-color: #fff;
+  margin:10px;
+  -webkit-box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+  -moz-box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+  box-shadow: -5px 2px 7px 2px rgba(175,176,184,1);
+
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {   
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }

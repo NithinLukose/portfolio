@@ -1,25 +1,88 @@
 import React from 'react';
-import logo from './logo.svg';
+import displayImage from './image/display_image.jpg'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="main-container">
+
+      <div className="left-div">
+
+        <div className="display-image">
+
+          <img src={displayImage} alt="dp" />
+
+        </div>  
+
+        <div className="name">
+
+          <h3>Nithin Lukose</h3>
+
+        </div> 
+        <div className="personal-details">
+
+          <div className="details">
+            <i className="material-icons">work</i> 
+            <span>Frontend Developer</span>
+          </div>
+
+          <div className="details">
+            <i className="material-icons">home</i> 
+            <span>Bangalore</span>
+          </div>
+
+          <div className="details">
+            <i className="material-icons">email</i> 
+            <span>nithinclukose12@gmail.com</span>
+          </div>
+
+          <div className="details">
+            <i className="material-icons">phone</i> 
+            <span>8984818292</span>
+          </div>
+
+        </div> 
+        <div className="skills">
+
+          <div className="details">
+            <i className="material-icons">star</i> 
+            <span>Skills</span>
+          </div>
+
+          <div className="tech">
+            <p>HTML</p>
+          </div>
+          
+          <div class="container">
+            <div class="skill avg">90%</div>
+          </div>
+
+          <div className="tech">
+            <p>CSS</p>
+          </div>
+          
+          <div class="container">
+            <div class="skill avg">90%</div>
+          </div>
+
+          <div className="tech">
+            <p>Javascript</p>
+          </div>
+
+          <div class="container">
+            <div class="skill expert">95%</div>
+          </div>
+
+        </div>
+
+      </div>
+      <div className="right-div">professional details</div>
+
+
     </div>
+
   );
 }
 
